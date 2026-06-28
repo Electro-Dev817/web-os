@@ -1,1 +1,1 @@
-# web-os
+# StarOS

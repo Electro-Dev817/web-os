@@ -11,4 +11,55 @@ body {
         background-size: cover;
         background-position: center; 
         z-index: -1;
-        }
+    }
+
+.taskbar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        z-index: 999;
+    }
+
+.start {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        z-index: 1000;
+    }
+.start-icon {
+        width: 35px;
+        height: 35px;
+        margin-right: 5px;
+        z-index: 1000;
+    }
+
+.start menu {
+        display: none;
+        position: absolute;
+        bottom: 40px;
+        left: 10px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+.start:hover menu {
+        display: block;
+    }
+
+.start-menu-header {
+        font-weight: bold;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+.start-menu-body {
+        padding: 10px;
+    }
